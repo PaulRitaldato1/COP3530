@@ -25,7 +25,7 @@ When the pre-processor encounters this, it replaces every occurance of it in you
 #### undef
 Undef does the exact opposit of define. For lack of a better work it adds "scope" to your defines. I will show an example below.
 #### Examples
-* \#define ARRAY\_SIZE 500\\
+* \#define ARRAY\_SIZE 500 <br />
   int array[ARRAY\_SIZE] //Array is size 500
 * \#define sqr(a) (a*a)\\
   
