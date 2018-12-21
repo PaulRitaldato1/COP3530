@@ -60,7 +60,7 @@ This directive must be at the end of all the previous directives mentioned. It s
     \#ifndef ARRAY\_SIZE<br />
     \#define ARRAY\_SIZE 10 //ARRAY\_SIZE is only defined if it hasnt previously been defined<br />
     \#endif
-* //if, elif, else example<br />
+* `//if, elif, else example<br />
     \#if ARRAY\_SIZE>500<br />
     \#undef ARRAY\_SIZE<br />
     \#define ARRAY\_SIZE 100<br />
@@ -68,9 +68,8 @@ This directive must be at the end of all the previous directives mentioned. It s
     \#elif ARRAY\_SIZE<100<br />
     \#undef ARRAY\_SIZE<br />
     \#define ARRAY\_SIZE 100<br />
-
+<br />
     \#else<br />
     \#undef ARRAY\_SIZE<br />
     \#define ARRAY\_SIZE 100<br />
-    \#endif
-    
+    \#endif` 
