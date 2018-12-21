@@ -56,11 +56,11 @@ This directive must be at the end of all the previous directives mentioned. It s
     \#ifdef ARRAY\_SIZE<br />
     int array[ARRAY\_SIZE] // This code is only compiled if ARRAY\_SIZE is defined. Preventing errors <br />
     \#endif
-* //ifndef example
+* //ifndef example<br />
     \#ifndef ARRAY\_SIZE<br />
     \#define ARRAY\_SIZE 10 //ARRAY\_SIZE is only defined if it hasnt previously been defined<br />
     \#endif
-* //if, elif, else example
+* //if, elif, else example<br />
     \#if ARRAY\_SIZE>500<br />
     \#undef ARRAY\_SIZE<br />
     \#define ARRAY\_SIZE 100<br />
