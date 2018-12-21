@@ -27,18 +27,18 @@ Undef does the exact opposit of define. For lack of a better work it adds "scope
 #### Examples
 * \#define ARRAY\_SIZE 500 <br />
   int array[ARRAY\_SIZE] //Array is size 500
-* \#define sqr(a) (a*a)\\
+* \#define sqr(a) (a*a)<br />
   
-  int main(){\\
-    int x=5;\\
-    std::cout << sqr(x) << std::endl; //This will print out the result of x*x = 25\\
-    return 0;\\
+  int main(){<br />
+    int x=5;<br />
+    std::cout << sqr(x) << std::endl; //This will print out the result of x*x = 25<br />
+    return 0;<br />
   }
-* \#define ARRAY\_SIZE 200\\
-    int array[ARRAY\_SIZE] // array is size 200\\
-  \#undef ARRAY\_SIZE\\
+* \#define ARRAY\_SIZE 200<br />
+    int array[ARRAY\_SIZE] // array is size 200<br />
+  \#undef ARRAY\_SIZE<br />
 
-  \#define ARRAY\_SIZE 100\\
+  \#define ARRAY\_SIZE 100<br />
   int array2[ARRAY\_SIZE] // array is size 100
 
 
