@@ -102,6 +102,15 @@ Pointers are variables that store a memory address. Pointers need to be derefere
   <details><summary> SHOW ANSWER </summary> 
     constant pointer to an integer
     </details>
+* const char\* const
+  <details><summary> SHOW ANSWER </summary>
+    constant pointer to a character constant
+    </details>
+* char const\* const
+    <details><summary> SHOW ANWER </summary>
+    constant pointer to a constant character
+    </details>
+
 
 ### Examples
 * int a = 5; //Declare and initialize an int <br />
