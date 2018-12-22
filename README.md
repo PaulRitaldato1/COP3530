@@ -3,7 +3,7 @@
 This is a quick refreshed on c++.
 
 ## Pre-processor
-First we will go over pre-processor directives.
+First, we will go over pre-processor directives.
 Im sure you have used \#include, \#ifndef, and \#define directives, but there are many more, and they are a lot more useful than you originally learned!
 Pre-processor directives:
 - Macros
@@ -25,9 +25,9 @@ Lets go into detail about what each of these do, and what they are used for.
 
 ### Macros
 #### define
-When the pre-processor encounters this, it replaces every occurance of it in your code with what you defined. You can define anything you want (e.g functions, variables). The pre-processor does not understand c++ so you can define whatever, it simply replaces every occurance with whatever you defined. You may remember this is also how we define header files.
+When the pre-processor encounters this, it replaces every occurance of it in your code with what you defined. You can define anything you want (e.g functions, variables). The pre-processor does not understand c++ so you can define anything, it simply replaces every occurance with what you defined. You may remember this is also how we define header files.
 #### undef
-Undef does the exact opposit of define. For lack of a better work it adds "scope" to your defines. I will show an example below.
+Undef does the exact opposit of define. For lack of a better word it adds "scope" to your defines. I will show an example below.
 #### pragma once
 This can be used at the top of a header file to replace the standard ifndef, define, and endif statements.
 #### Examples
@@ -139,7 +139,7 @@ References are an 'alias' to a variable. You do not need to dereference referenc
     * To implement data structures (This class!)
     * If you need pointer arithmetic
 * References
-    * For function paramters
+    * For function parameters
     * Return values
     * The reason you would want this is so that you do not have to copy objects (or anything really) to pass it into a function.
 
