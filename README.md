@@ -154,3 +154,6 @@ The c++ STL is extremely useful and will be used throughout this course. STL pro
 5. #include \<stack\> //allows the use of stacks
 6. #include \<queue\> //allows the use of queues
 7. #include \<list\> //allows the use of (linked)lists
+
+## Templates, Classes, Interfaces, Inheritance
+
