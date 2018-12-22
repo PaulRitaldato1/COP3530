@@ -20,7 +20,8 @@ Pre-processor directives:
 - Includes
     - include <>
     - include ""
-Lets go into deteail about what each of these do, and what they are used for.
+<br />
+Lets go into detail about what each of these do, and what they are used for.
 
 ### Macros
 #### define
