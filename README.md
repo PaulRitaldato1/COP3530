@@ -147,10 +147,10 @@ References are an 'alias' to a variable. You do not need to dereference referenc
 The c++ STL is extremely useful and will be used throughout this course. STL provides templates for all (or most) of the data structures shown in this class. 
 
 ### Useful headers from the STL (not complete list)
-1. #include <vector> //allows you to use vectors
-2. #include <iostream> //allows basic io to stdout and stdin
-3. #include <utility> //allows the use of pairs
-4. #include <unordered\_map> //allows the use of hashmaps
-5. #include <stack> //allows the use of stacks
-6. #include <queue> //allows the use of queues
-7. #include <list> //allows the use of (linked)lists
+1. #include \<vector\> //allows you to use vectors
+2. #include \<iostream\> //allows basic io to stdout and stdin
+3. #include \<utility\> //allows the use of pairs
+4. #include \<unordered\_map\> //allows the use of hashmaps
+5. #include \<stack\> //allows the use of stacks
+6. #include \<queue\> //allows the use of queues
+7. #include \<list\> //allows the use of (linked)lists
