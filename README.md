@@ -88,5 +88,5 @@ This include is used for including headers from your current path. The path that
 In both of these you can include a path to a certain file. By default \#include<> has pre defined search paths, and \#include"" only searches the current directory of the file that it is declared in. If you have a directory structure you can specify that in the path. See examples below.
 
 ### Examples
-* \#include<vector> //Standard library
+* \#include\<vector\> //Standard library
 * \#include "bin/myHeader.h" //Starting from the current file path, search in the bin directory for myHeader.h
