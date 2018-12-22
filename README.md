@@ -9,6 +9,7 @@ Pre-processor directives:
 - Macros
     - define
     - undef
+    - pragma once
 - Conditionals
     - ifdef
     - ifndef
@@ -16,7 +17,9 @@ Pre-processor directives:
     - else
     - elif
     - endif
-    
+-Includes
+    - include <>
+    - include ""
 Lets go into deteail about what each of these do, and what they are used for.
 
 ### Macros
@@ -24,6 +27,8 @@ Lets go into deteail about what each of these do, and what they are used for.
 When the pre-processor encounters this, it replaces every occurance of it in your code with what you defined. You can define anything you want (e.g functions, variables). The pre-processor does not understand c++ so you can define whatever, it simply replaces every occurance with whatever you defined. You may remember this is also how we define header files.
 #### undef
 Undef does the exact opposit of define. For lack of a better work it adds "scope" to your defines. I will show an example below.
+#### pragma once
+This can be used at the top of a header file to replace the standard ifndef, define, and endif statements.
 #### Examples
 * \#define ARRAY\_SIZE 500 <br />
   int array[ARRAY\_SIZE] //Array is size 500
@@ -60,7 +65,7 @@ This directive must be at the end of all the previous directives mentioned. It s
     \#ifndef ARRAY\_SIZE<br />
     \#define ARRAY\_SIZE 10 //ARRAY\_SIZE is only defined if it hasnt previously been defined<br />
     \#endif
-* <p><code>//if, elif, else example
+*  //if, elif, else example<br />
    \#if ARRAY\_SIZE>500<br />
     \#undef ARRAY\_SIZE<br />
     \#define ARRAY\_SIZE 100<br />
@@ -70,6 +75,17 @@ This directive must be at the end of all the previous directives mentioned. It s
     \#else<br />
     \#undef ARRAY\_SIZE<br />
     \#define ARRAY\_SIZE 100<br />
-    \#endif</code></p>
+    \#endif
 
-`code`
+### Includes
+### include <>
+This with the angle brackets is used to include files provided by implementation (on linux it searches known file paths from root or /). This is for including standard library headers, and has a pre-defined search path (depending on implementation).
+### include ""
+This include is used for including headers from your current path. The path that is used as a base search is the directory of the file with this include.
+
+## Both
+In both of these you can include a path to a certain file. By default \#include<> has pre defined search paths, and \#include"" only searches the current directory of the file that it is declared in. If you have a directory structure you can specify that in the path. See examples below.
+
+### Examples
+* \#include<vector> //Standard library
+* \#include "bin/myHeader.h" //Starting from the current file path, search in the bin directory for myHeader.h
