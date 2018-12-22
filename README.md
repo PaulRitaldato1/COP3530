@@ -33,7 +33,7 @@ This can be used at the top of a header file to replace the standard ifndef, def
 #### Examples
 * \#define ARRAY\_SIZE 500 <br />
   int array[ARRAY\_SIZE] //Array is size 500
-* \#define sqr(a) (a*a)<br />
+* \#define sqr(a) (a\*a)<br />
  
   int main(){<br />
     int x=5;<br />
@@ -119,20 +119,20 @@ Pointers are variables that store a memory address. Pointers need to be derefere
   std::cout << "The address of a is: " << pa << "\nThe value at that address is: " << \*pa << std::endl; //print the address and value of a <br />
 
 * //pointer math example
-  int a[5] = {1, 2, 3, 4, 5};
-  int\* pa = a; //Arrays are pointers! So you dont need to use the & operator
-  std::cout << "a[2] is: " << \*(pa + 2) << std::endl; //This will print out a[2]
-* myObject\* a; //Assume there is some object called myObject
-  myObject->function(); //The -> operator is used in place of . when you have a pointer to an object.
+  int a[5] = {1, 2, 3, 4, 5};<br />
+  int\* pa = a; //Arrays are pointers! So you dont need to use the & operator<br />
+  std::cout << "a[2] is: " << \*(pa + 2) << std::endl; //This will print out a[2]<br />
+* myObject\* a; //Assume there is some object called myObject<br />
+  myObject->function(); //The -> operator is used in place of . when you have a pointer to an object.<br />
 
 
 ### References
 References are an 'alias' to a variable. You do not need to dereference references to access their data.
 
 ### Example
-* int i = 5;
-  int& ri = i; //ri is a reference or alias to i
-  std::cout << "Printing out i through the reference ri: " << ri << std::endl;
+* int i = 5; <br />
+  int& ri = i; //ri is a reference or alias to i<br />
+  std::cout << "Printing out i through the reference ri: " << ri << std::endl;<br />
 
 ### When to use what
 * Pointers
@@ -143,4 +143,14 @@ References are an 'alias' to a variable. You do not need to dereference referenc
     * Return values
     * The reason you would want this is so that you do not have to copy objects (or anything really) to pass it into a function.
 
+## STL (Standard Template Library)
+The c++ STL is extremely useful and will be used throughout this course. STL provides templates for all (or most) of the data structures shown in this class. 
 
+### Useful headers from the STL (not complete list)
+1. #include <vector> //allows you to use vectors
+2. #include <iostream> //allows basic io to stdout and stdin
+3. #include <utility> //allows the use of pairs
+4. #include <unordered\_map> //allows the use of hashmaps
+5. #include <stack> //allows the use of stacks
+6. #include <queue> //allows the use of queues
+7. #include <list> //allows the use of (linked)lists
