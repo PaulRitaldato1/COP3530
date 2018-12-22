@@ -34,7 +34,7 @@ This can be used at the top of a header file to replace the standard ifndef, def
 * \#define ARRAY\_SIZE 500 <br />
   int array[ARRAY\_SIZE] //Array is size 500
 * \#define sqr(a) (a*a)<br />
-  
+ 
   int main(){<br />
     int x=5;<br />
     std::cout << sqr(x) << std::endl; //This will print out the result of x*x = 25<br />
@@ -48,16 +48,16 @@ This can be used at the top of a header file to replace the standard ifndef, def
   int array2[ARRAY\_SIZE] // array is size 100
 
 ### Conditionals
-### ifdef
+#### ifdef
 ifdef(if defined) will allow a section of code to be compiled ONLY if it has been defined elsewhere with define.
-### ifndef
+#### ifndef
 ifndef (if not defined) will only compile a section of code if the specified define has not already been defined. This is used when creating header files to prevent compiling code multiple times.
-### if, elif, else
+#### if, elif, else
 These directives serve a similar purpose to what you would expect. They allow for code to be compiled upon completion of a condition. Any combination of these can be combined to form complete control structures for the pre-processor!
-### endif
+#### endif
 This directive must be at the end of all the previous directives mentioned. It serves to tell the pre-processor when the condition block of code has ended.
 
-### Examples
+#### Examples
 * //ifdef example<br />
     \#ifdef ARRAY\_SIZE<br />
     int array[ARRAY\_SIZE] // This code is only compiled if ARRAY\_SIZE is defined. Preventing errors <br />
@@ -79,14 +79,32 @@ This directive must be at the end of all the previous directives mentioned. It s
     \#endif
 
 ### Includes
-### include <>
+#### include <>
 This with the angle brackets is used to include files provided by implementation (on linux it searches known file paths from root or /). This is for including standard library headers, and has a pre-defined search path (depending on implementation).
-### include ""
+#### include ""
 This include is used for including headers from your current path. The path that is used as a base search is the directory of the file with this include.
 
-## Both
+#### Both
 In both of these you can include a path to a certain file. By default \#include<> has pre defined search paths, and \#include"" only searches the current directory of the file that it is declared in. If you have a directory structure you can specify that in the path. See examples below.
 
-### Examples
+#### Examples
 * \#include\<vector\> //Standard library
 * \#include "bin/myHeader.h" //Starting from the current file path, search in the bin directory for myHeader.h
+
+## Pointers and References
+Pointers are your friends! <br />
+
+### Pointers
+Pointers are variables that store a memory address. Pointers need to be dereferenced with the * operator to access the data at its given memory address. Pointers just hold a memory address, so they can point to anything (ex. variables, objects, files). You can also use pointers to do "pointer math" to traverse through arrays. The way to read pointers is from right to left. So the expression "const int\*" is read as "pointer to a int constant".
+
+### Practice
+* int\* const
+  <details><summary> SHOW ANSWER </summary> 
+    constant pointer to an integer
+    </details>
+
+### Examples
+* int a = 5; //Declare and initialize an int
+  int\* pa = &a;//Assign the pointer pa to the address of a
+  std::cout << "The address of a is: " << pa << "\nThe value at that address is: " << \*pa << std::endl; //print the address and value of a
+### References
