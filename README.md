@@ -113,7 +113,34 @@ Pointers are variables that store a memory address. Pointers need to be derefere
 
 
 ### Examples
-* int a = 5; //Declare and initialize an int <br />
+* //basic pointer example
+  int a = 5; //Declare and initialize an int <br />
   int\* pa = &a;//Assign the pointer pa to the address of a<br />
   std::cout << "The address of a is: " << pa << "\nThe value at that address is: " << \*pa << std::endl; //print the address and value of a <br />
+
+* //pointer math example
+  int a[5] = {1, 2, 3, 4, 5};
+  int\* pa = a; //Arrays are pointers! So you dont need to use the & operator
+  std::cout << "a[2] is: " << \*(pa + 2) << std::endl; //This will print out a[2]
+* myObject\* a; //Assume there is some object called myObject
+  myObject->function(); //The -> operator is used in place of . when you have a pointer to an object.
+
+
 ### References
+References are an 'alias' to a variable. You do not need to dereference references to access their data.
+
+### Example
+* int i = 5;
+  int& ri = i; //ri is a reference or alias to i
+  std::cout << "Printing out i through the reference ri: " << ri << std::endl;
+
+### When to use what
+* Pointers
+    * To implement data structures (This class!)
+    * If you need pointer arithmetic
+* References
+    * For function paramters
+    * Return values
+    * The reason you would want this is so that you do not have to copy objects (or anything really) to pass it into a function.
+
+
