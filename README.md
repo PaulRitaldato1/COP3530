@@ -9,7 +9,7 @@ Here are a few ways you may want to go about this:
 - Code::Blocks (Any)
 ### Command Line
 <details><summary> Linux </summary> 
-<details><summary> Debian based systems (Ubuntu Included) </summary> 
+1. <details><summary> Debian based systems (Ubuntu Included) </summary> 
 		
 	# To install the g++ compiler open a terminal and type:
 		sudo apt install g++
@@ -22,7 +22,7 @@ Here are a few ways you may want to go about this:
 </details>
 
 
-<details><summary> Arch based systems </summary>
+2. <details><summary> Arch based systems </summary>
 
 	# To install the g++ compiler open a terminal and type:
 		sudo pacman -S g++
@@ -44,13 +44,13 @@ In windows you have three options: <br />
 
  
 To install WSL follow these instructions: <br />
-	1. Open powershell as an __administrator__ <br />
-	2. Copy and paste this command into powershell: Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Windows-Subsystem-Linux<br />
-	3. Restart your computer<br />
-	4. Open the Windows/Microsoft store and search for "Ubuntu"<br />
-	5. Install Ubuntu<br />
-	6. Run it, then create a username and password as prompted<br />
-	7. Follow steps in the Linux section to install g++ and compile cpp programs<br />
+1. Open powershell as an __administrator__ <br />
+2. 	2. Copy and paste this command into powershell: Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Windows-Subsystem-Linux<br />
+3. Restart your computer<br />
+4. Open the Windows/Microsoft store and search for "Ubuntu"<br />
+5. Install Ubuntu<br />
+6. Run it, then create a username and password as prompted<br />
+7. Follow steps in the Linux section to install g++ and compile cpp programs<br />
 </details>
 <details><summary> Cygwin (recommended) </summary>
 	To install Cygwin follow this tutorial:<br />
