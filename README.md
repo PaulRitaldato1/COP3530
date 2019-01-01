@@ -2,7 +2,7 @@
 
 ## Getting Started
 First things first, you will need to be able to create/edit C++ (.cpp/.h) files, and you will need to be able to compile/run them. <br /><br />
-Here are a few ways you may want to go about this
+Here are a few ways you may want to go about this:
 ### IDEs
 - Clion (Windows 64-bit, Mac, Linux 64-bit)
 - VisualStudio (Windows)
@@ -11,8 +11,8 @@ Here are a few ways you may want to go about this
 - Linux <details><summary> Show </summary> 
    	- Debian based systems <details><summary> Show </summary> 
    	  * sudo apt install g++
-		To compile a .cpp file run the command:
-			g++ -std=c++11 myProg.cpp -o myProg
+		<br /> To compile a .cpp file run the command: <br />
+			g++ -std=c++11 myProg.cpp -o myProg 
 		To run the file simply type the command:
 			./myProg
 		To combine these into a single command:
