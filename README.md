@@ -1,7 +1,30 @@
 # C++ Refresher
 
-This is a quick refreshed on c++.
-
+## Getting Started
+First things first, you will need to be able to create/edit C++ (.cpp/.h) files, and you will need to be able to compile/run them. <br /><br />
+Here are a few ways you may want to go about this:
+### IDEs
+    - Clion (Windows 64-bit, Mac, Linux 64-bit)
+	- VisualStudio (Windows)
+	- Code::Blocks (Any)
+### Command Line
+	- Linux <details><summary> Show </summary> 
+    	- Debian based systems <details><summary> Show </summary> 
+    	  * sudo apt install g++
+			To compile a .cpp file run the command:
+				g++ -std=c++11 myProg.cpp -o myProg
+			To run the file simply type the command:
+				./myProg
+			To combine these into a single command:
+				g++ -std=c++11 myProg.cpp -o myProg && ./,myProg
+    	  </details>
+    </details>
+	- Windows<details><summary> Show </summary> 
+    	In windows you have two options:
+			1 Windows Subsystem for Linux (WSL)
+				
+    </details>
+	- Mac
 ## Pre-processor
 First, we will go over pre-processor directives.
 Im sure you have used \#include, \#ifndef, and \#define directives, but there are many more, and they are a lot more useful than you originally learned!
@@ -95,7 +118,7 @@ In both of these you can include a path to a certain file. By default \#include<
 Pointers are your friends! <br />
 
 ### Pointers
-Pointers are variables that store a memory address. Pointers need to be dereferenced with the * operator to access the data at its given memory address. Pointers just hold a memory address, so they can point to anything (ex. variables, objects, files). You can also use pointers to do "pointer math" to traverse through arrays. The way to read pointers is from right to left. So the expression "const int\*" is read as "pointer to a int constant".
+Pointers are variables that store a memory address. Pointers need to be dereferenced with the * operator to access the data at its given memory address. Pointers just hold a memory address, so they can point to anything (ex. variables, objects, files). You can also use pointers to do "pointer math" to traverse through arrays. The way to read pointers is from right to left. So the expression "const int\*" is read as "pointer to an int constant".
 
 ### Practice
 * int\* const
@@ -111,6 +134,13 @@ Pointers are variables that store a memory address. Pointers need to be derefere
     constant pointer to a constant character
     </details>
 
+### Dynamically Allocated Memory
+Sometimes you will need to allocate memory dynamically. This means that the memory is allocated on the heap, at runtime. This is expecially useful for dynamically allocated arrays, which would allow the user to allocate memory at runtime. Normally, C++ must know the size of an array at compile time, this is why dynamic memory is useful.
+#### The new Keyword
+The new keyword is used to allocated dynamic memory in C++. It can be used to allocate any datatype. It does not initialize the memory, it "reserves" the memory.
+#### The delete Keyword
+The delete keyword is used to de-allocate memory that was allocated with new. This is used to prevent memory leaks. Memory leaks can cause serious issues in larger programs, especially ones that are expected to run for long periods of time (what you would be working on in a professional setting).
+
 
 ### Examples
 * //basic pointer example
@@ -124,7 +154,11 @@ Pointers are variables that store a memory address. Pointers need to be derefere
   std::cout << "a[2] is: " << \*(pa + 2) << std::endl; //This will print out a[2]<br />
 * myObject\* a; //Assume there is some object called myObject<br />
   myObject->function(); //The -> operator is used in place of . when you have a pointer to an object.<br />
-
+* //Dynamic memory example
+  int size;
+  std::cin >> size; //get size of the shopping list from user
+  std::string* shopping_list;
+  shopping_list = new std::string[size]; //allocate an array to the size specified at runtime
 
 ### References
 References are an 'alias' to a variable. You do not need to dereference references to access their data.
@@ -149,7 +183,7 @@ The c++ STL is extremely useful and will be used throughout this course. STL pro
 ### Useful headers from the STL (not complete list)
 1. #include \<vector\> //allows you to use vectors
 2. #include \<iostream\> //allows basic io to stdout and stdin
-3. #include \<utility\> //allows the use of pairs
+3. #include \<utility\> //allows the use of pairs and smart pointers
 4. #include \<unordered\_map\> //allows the use of hashmaps
 5. #include \<stack\> //allows the use of stacks
 6. #include \<queue\> //allows the use of queues
