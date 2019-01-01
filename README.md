@@ -11,14 +11,14 @@ Here are a few ways you may want to go about this:
 <details><summary> Linux </summary> 
    	<details><summary> Debian based systems (Ubuntu Included) </summary> 
 		
-	<br />To install the g++ compiler open a terminal and type: <br />
+	# To install the g++ compiler open a terminal and type:
 		sudo apt install g++
-	To compile a .cpp file run the command: <br />
-		g++ -std=c++11 myProg.cpp -o myProg <br />
-	To run the file simply type the command:<br />
-		./myProg <br />
-	To combine these into a single command: <br />
-		g++ -std=c++11 myProg.cpp -o myProg && ./,myProg <br />
+	# To compile a .cpp file run the command:
+		g++ -std=c++11 myProg.cpp -o myProg
+	# To run the file simply type the command:
+		./myProg
+	# To combine these into a single command:
+		g++ -std=c++11 myProg.cpp -o myProg && ./,myProg
    	  </details>
    </details>
 <details><summary> Windows </summary> 
