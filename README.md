@@ -20,8 +20,8 @@ Here are a few ways you may want to go about this:
    	  </details>
    </details>
 <details><summary> Windows </summary> 
-   	In windows you have three options:
-		1.<details><summary> Windows Subsystem for Linux (WSL)(recommended) </summary> 
+   	In windows you have three options: <br />
+		<details><summary> Windows Subsystem for Linux (WSL)(recommended) </summary> 
     	   To install WSL follow these instructions. <br />
 				1. Open powershell as an __administrator__<br />
 				2. Copy and paste this command into powershell: Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Windows-Subsystem-Linux<br />
@@ -31,13 +31,13 @@ Here are a few ways you may want to go about this:
 				6. Run it, then create a username and password as prompted<br />
 				7. Follow steps in the Linux section to install g++ and compile cpp programs<br />
     	</details>
-		2. <details><summary> Cygwin (recommended) </summary>
+		<details><summary> Cygwin (recommended) </summary>
 			To install Cygwin follow this tutorial:<br />
 			<a href="https://www.youtube.com/watch?v=dDbCZB1Mx-E&feature=youtu.be" target="_blank"><img src="https://www.youtube.com/watch?v=dDbCZB1Mx-E&feature=youtu.be/0.jpg" alt="Supposed to be a video here..." width="240" height="180" border="10" /></a>
 		   </details>
 			
 		
-   </details>
+</details>
 - Mac
 ## Pre-processor
 First, we will go over pre-processor directives.
