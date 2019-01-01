@@ -53,11 +53,13 @@ To install WSL follow these instructions: <br />
 5. Install Ubuntu<br />
 6. Run it, then create a username and password as prompted<br />
 7. Follow steps in the Linux section to install g++ and compile cpp programs<br />
-</details>
+	</details>
+
+
 2. <details><summary> Cygwin (recommended) </summary>
 	To install Cygwin follow this tutorial:<br />
 	<a href="http://www.youtube.com/watch?feature=player_embedded&v=dDbCZB1Mx-E" target="_blank"><img src="https://www.youtube.com/watch?v=dDbCZB1Mx-E/0.jpg" alt="Cygwin Tutorial" width="240" height="180" border="10" /></a>
-</details>
+	</details>
 			
 		
 </details>
