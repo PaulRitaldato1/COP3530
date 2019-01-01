@@ -9,19 +9,30 @@ Here are a few ways you may want to go about this:
 - Code::Blocks (Any)
 ### Command Line
 - Linux <details><summary> Show </summary> 
-   	- Debian based systems <details><summary> Show </summary> 
+   	- Debian based systems (Ubuntu Included) <details><summary> Show </summary> 
    	  * sudo apt install g++
 		<br /> To compile a .cpp file run the command: <br />
-			g++ -std=c++11 myProg.cpp -o myProg 
-		To run the file simply type the command:
-			./myProg
-		To combine these into a single command:
-			g++ -std=c++11 myProg.cpp -o myProg && ./,myProg
+			g++ -std=c++11 myProg.cpp -o myProg <br />
+		To run the file simply type the command:<br />
+			./myProg <br />
+		To combine these into a single command: <br />
+			g++ -std=c++11 myProg.cpp -o myProg && ./,myProg <br />
    	  </details>
    </details>
 - Windows<details><summary> Show </summary> 
    	In windows you have two options:
-		1 Windows Subsystem for Linux (WSL)
+		1. Windows Subsystem for Linux (WSL)<details><summary> Show </summary> 
+    	   To install WSL follow these instructions. <br />
+				1. Open powershell as an __administrator__
+				2. Copy and paste this command into powershell: Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Windows-Subsystem-Linux
+				3. Restart your computer
+				4. Open the windows store and search for "Ubuntu"
+				5. Install Ubuntu
+				6. Run it, then create a username and password as prompted
+				7. Follow steps in the Linux section to install g++ and compile cpp programs
+    	</details>
+		2. Windows Command line (cmd) or Powershell
+			
 		
    </details>
 - Mac
