@@ -44,7 +44,7 @@ Here are a few ways you may want to go about this:
 In windows you have three options:
 
 
-* <details><summary> Windows Subsystem for Linux (WSL)(recommended) </summary>
+*<details><summary> Windows Subsystem for Linux (WSL)(recommended) </summary>
 
  
 To install WSL follow these instructions:
