@@ -8,7 +8,7 @@ Here are a few ways you may want to go about this:
 - VisualStudio (Windows)
 - Code::Blocks (Any)
 ### Command Line
-- <details><summary> Linux </summary> 
+<details><summary> Linux </summary> 
    	- Debian based systems (Ubuntu Included) <details><summary> Show </summary> 
    	  * sudo apt install g++
 		<br /> To compile a .cpp file run the command: <br />
@@ -19,9 +19,9 @@ Here are a few ways you may want to go about this:
 			g++ -std=c++11 myProg.cpp -o myProg && ./,myProg <br />
    	  </details>
    </details>
-- Windows<details><summary> Show </summary> 
-   	In windows you have two options:
-		1. Windows Subsystem for Linux (WSL)<details><summary> Show </summary> 
+<details><summary> Windows </summary> 
+   	In windows you have three options:
+		1.<details><summary> Windows Subsystem for Linux (WSL)(recommended) </summary> 
     	   To install WSL follow these instructions. <br />
 				1. Open powershell as an __administrator__<br />
 				2. Copy and paste this command into powershell: Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Windows-Subsystem-Linux<br />
@@ -31,7 +31,10 @@ Here are a few ways you may want to go about this:
 				6. Run it, then create a username and password as prompted<br />
 				7. Follow steps in the Linux section to install g++ and compile cpp programs<br />
     	</details>
-		2. Windows Command line (cmd) or Powershell
+		2. <details><summary> Cygwin (recommended) </summary>
+			To install Cygwin follow this tutorial:<br />
+			<a href="https://www.youtube.com/watch?v=dDbCZB1Mx-E&feature=youtu.be" target="_blank"><img src="https://www.youtube.com/watch?v=dDbCZB1Mx-E&feature=youtu.be/0.jpg" alt="Supposed to be a video here..." width="240" height="180" border="10" /></a>
+		   </details>
 			
 		
    </details>
