@@ -42,7 +42,7 @@ Here are a few ways you may want to go about this:
 
 
 In windows you have three options: <br />
-1. <details><summary> Windows Subsystem for Linux (WSL)(recommended) </summary>
+* <details><summary> Windows Subsystem for Linux (WSL)(recommended) </summary>
 
  
 To install WSL follow these instructions:
@@ -56,7 +56,7 @@ To install WSL follow these instructions:
 </details>
 
 
-2. <details><summary> Cygwin (recommended) </summary>
+* <details><summary> Cygwin (recommended) </summary>
 To install Cygwin follow this tutorial:
 
 
