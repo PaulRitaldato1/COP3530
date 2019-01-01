@@ -13,15 +13,15 @@ Here are a few ways you may want to go about this:
  
 * <details><summary> Debian based systems (Ubuntu Included) </summary> 
 		
-	# To install the g++ compiler open a terminal and type:
+	To install the g++ compiler open a terminal and type:
 		sudo apt install g++
-	# To compile a .cpp file run the command:
+	To compile a .cpp file run the command:
 		g++ -std=c++11 myProg.cpp -o myProg
-	# To run the file simply type the command:
+	To run the file simply type the command:
 		./myProg
-	# To combine these into a single command:
+	To combine these into a single command:
 		g++ -std=c++11 myProg.cpp -o myProg && ./myProg
-</details>
+	</details>
 
 
 * <details><summary> Arch based systems </summary>
@@ -34,7 +34,7 @@ Here are a few ways you may want to go about this:
 		./myProg
 	To combine these into a single command:
 		g++ -std=c++11 myProg.cpp -o myProg && ./myProg
-</details>
+	</details>
 
 
 </details>
