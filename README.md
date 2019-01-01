@@ -9,14 +9,16 @@ Here are a few ways you may want to go about this:
 - Code::Blocks (Any)
 ### Command Line
 <details><summary> Linux </summary> 
-   	- Debian based systems (Ubuntu Included) <details><summary> Show </summary> 
-   	  * sudo apt install g++
-		<br /> To compile a .cpp file run the command: <br />
-			g++ -std=c++11 myProg.cpp -o myProg <br />
-		To run the file simply type the command:<br />
-			./myProg <br />
-		To combine these into a single command: <br />
-			g++ -std=c++11 myProg.cpp -o myProg && ./,myProg <br />
+   	<details><summary> Debian based systems (Ubuntu Included) </summary> 
+		
+	<br />To install the g++ compiler open a terminal and type: <br />
+		sudo apt install g++
+	To compile a .cpp file run the command: <br />
+		g++ -std=c++11 myProg.cpp -o myProg <br />
+	To run the file simply type the command:<br />
+		./myProg <br />
+	To combine these into a single command: <br />
+		g++ -std=c++11 myProg.cpp -o myProg && ./,myProg <br />
    	  </details>
    </details>
 <details><summary> Windows </summary> 
