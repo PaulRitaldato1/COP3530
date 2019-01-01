@@ -9,7 +9,7 @@ Here are a few ways you may want to go about this:
 - Code::Blocks (Any)
 ### Command Line
 <details><summary> Linux </summary> 
-   	*<details><summary> Debian based systems (Ubuntu Included) </summary> 
+	<details><summary> Debian based systems (Ubuntu Included) </summary> 
 		
 	# To install the g++ compiler open a terminal and type:
 		sudo apt install g++
@@ -19,14 +19,26 @@ Here are a few ways you may want to go about this:
 		./myProg
 	# To combine these into a single command:
 		g++ -std=c++11 myProg.cpp -o myProg && ./myProg
-   </details>
+	</details>
+	<details><summary> Arch bases systems </summary>
+	# To install the g++ compiler open a terminal and type:
+		sudo pacman -S g++
+	# To compile a .cpp file run the command:
+		g++ -std=c++11 myProg.cpp -o myProg
+	# To run the file simply type the command:
+		./myProg
+	# To combine these into a single command:
+		g++ -std=c++11 myProg.cpp -o myProg && ./myProg
+	</details>
 </details>
 <details><summary> Windows </summary> 
 
 
 In windows you have three options: <br />
-	* <details><summary> Windows Subsystem for Linux (WSL)(recommended) </summary> 
-   	   To install WSL follow these instructions. <br />
+	* <details><summary> Windows Subsystem for Linux (WSL)(recommended) </summary>
+
+ 
+   	   To install WSL follow these instructions: <br />
 			1. Open powershell as an __administrator__ <br />
 			2. Copy and paste this command into powershell: Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Windows-Subsystem-Linux<br />
 			3. Restart your computer<br />
@@ -37,7 +49,7 @@ In windows you have three options: <br />
    	</details>
 	* <details><summary> Cygwin (recommended) </summary>
 		To install Cygwin follow this tutorial:<br />
-		<a href="https://www.youtube.com/watch?v=dDbCZB1Mx-E&feature=youtu.be" target="_blank"><img src="https://www.youtube.com/watch?v=dDbCZB1Mx-E&feature=youtu.be/0.jpg" alt="Supposed to be a video here..." width="240" height="180" border="10" /></a>
+		<a href="http://www.youtube.com/watch?feature=player_embedded&v=dDbCZB1Mx-E" target="_blank"><img src="https://www.youtube.com/watch?v=dDbCZB1Mx-E/0.jpg" alt="Supposed to be a video here..." width="240" height="180" border="10" /></a>
 		   </details>
 			
 		
