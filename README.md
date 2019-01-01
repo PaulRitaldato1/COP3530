@@ -23,13 +23,13 @@ Here are a few ways you may want to go about this:
    	In windows you have two options:
 		1. Windows Subsystem for Linux (WSL)<details><summary> Show </summary> 
     	   To install WSL follow these instructions. <br />
-				1. Open powershell as an __administrator__
-				2. Copy and paste this command into powershell: Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Windows-Subsystem-Linux
-				3. Restart your computer
-				4. Open the windows store and search for "Ubuntu"
-				5. Install Ubuntu
-				6. Run it, then create a username and password as prompted
-				7. Follow steps in the Linux section to install g++ and compile cpp programs
+				1. Open powershell as an __administrator__<br />
+				2. Copy and paste this command into powershell: Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Windows-Subsystem-Linux<br />
+				3. Restart your computer<br />
+				4. Open the Windows/Microsoft store and search for "Ubuntu"<br />
+				5. Install Ubuntu<br />
+				6. Run it, then create a username and password as prompted<br />
+				7. Follow steps in the Linux section to install g++ and compile cpp programs<br />
     	</details>
 		2. Windows Command line (cmd) or Powershell
 			
