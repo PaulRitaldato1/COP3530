@@ -43,18 +43,18 @@ In windows you have three options: <br />
 <details><summary> Windows Subsystem for Linux (WSL)(recommended) </summary>
 
  
-	To install WSL follow these instructions: <br />
-		1. Open powershell as an __administrator__ <br />
-		2. Copy and paste this command into powershell: Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Windows-Subsystem-Linux<br />
-		3. Restart your computer<br />
-		4. Open the Windows/Microsoft store and search for "Ubuntu"<br />
-		5. Install Ubuntu<br />
-		6. Run it, then create a username and password as prompted<br />
-		7. Follow steps in the Linux section to install g++ and compile cpp programs<br />
+To install WSL follow these instructions: <br />
+	1. Open powershell as an __administrator__ <br />
+	2. Copy and paste this command into powershell: Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Windows-Subsystem-Linux<br />
+	3. Restart your computer<br />
+	4. Open the Windows/Microsoft store and search for "Ubuntu"<br />
+	5. Install Ubuntu<br />
+	6. Run it, then create a username and password as prompted<br />
+	7. Follow steps in the Linux section to install g++ and compile cpp programs<br />
 </details>
 <details><summary> Cygwin (recommended) </summary>
 	To install Cygwin follow this tutorial:<br />
-	<a href="http://www.youtube.com/watch?feature=player_embedded&v=dDbCZB1Mx-E" target="_blank"><img src="https://www.youtube.com/watch?v=dDbCZB1Mx-E/0.jpg" alt="Supposed to be a video here..." width="240" height="180" border="10" /></a>
+	<a href="http://www.youtube.com/watch?feature=player_embedded&v=dDbCZB1Mx-E" target="_blank"><img src="https://www.youtube.com/watch?v=dDbCZB1Mx-E/0.jpg" alt="Cygwin Tutorial" width="240" height="180" border="10" /></a>
 </details>
 			
 		
