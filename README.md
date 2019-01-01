@@ -2,7 +2,7 @@
 
 ## Getting Started
 First things first, you will need to be able to create/edit C++ (.cpp/.h) files, and you will need to be able to compile/run them. <br /><br />
-Here are a few ways you may want to go about this:
+Here are a few ways you may want to go about this
 ### IDEs
     - Clion (Windows 64-bit, Mac, Linux 64-bit)
 	- VisualStudio (Windows)
