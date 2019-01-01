@@ -19,8 +19,8 @@ Here are a few ways you may want to go about this:
 		./myProg
 	# To combine these into a single command:
 		g++ -std=c++11 myProg.cpp -o myProg && ./,myProg
-   	  </details>
    </details>
+</details>
 <details><summary> Windows </summary> 
 
 
