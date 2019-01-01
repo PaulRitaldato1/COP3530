@@ -8,7 +8,7 @@ Here are a few ways you may want to go about this:
 - VisualStudio (Windows)
 - Code::Blocks (Any)
 ### Command Line
-- Linux <details><summary> Show </summary> 
+- <details><summary> Linux </summary> 
    	- Debian based systems (Ubuntu Included) <details><summary> Show </summary> 
    	  * sudo apt install g++
 		<br /> To compile a .cpp file run the command: <br />
