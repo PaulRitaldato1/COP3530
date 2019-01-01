@@ -41,7 +41,9 @@ Here are a few ways you may want to go about this:
 <details><summary> Windows </summary> 
 
 
-In windows you have three options: <br />
+In windows you have three options:
+
+
 * <details><summary> Windows Subsystem for Linux (WSL)(recommended) </summary>
 
  
@@ -53,7 +55,7 @@ To install WSL follow these instructions:
 5. Install Ubuntu
 6. Run it, then create a username and password as prompted
 7. Follow steps in the Linux section to install g++ and compile cpp programs
-	</details>
+  </details>
 
 
 * <details><summary> Cygwin (recommended) </summary>
@@ -61,7 +63,7 @@ To install Cygwin follow this tutorial:
 
 
 <a href="http://www.youtube.com/watch?feature=player_embedded&v=dDbCZB1Mx-E" target="_blank"><img src="https://www.youtube.com/watch?v=dDbCZB1Mx-E/0.jpg" alt="Cygwin Tutorial" width="240" height="180" border="10" /></a>
-</details>
+	</details>
 			
 		
 </details>
