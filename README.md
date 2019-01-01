@@ -4,27 +4,27 @@
 First things first, you will need to be able to create/edit C++ (.cpp/.h) files, and you will need to be able to compile/run them. <br /><br />
 Here are a few ways you may want to go about this
 ### IDEs
-    - Clion (Windows 64-bit, Mac, Linux 64-bit)
-	- VisualStudio (Windows)
-	- Code::Blocks (Any)
+- Clion (Windows 64-bit, Mac, Linux 64-bit)
+- VisualStudio (Windows)
+- Code::Blocks (Any)
 ### Command Line
-	- Linux <details><summary> Show </summary> 
-    	- Debian based systems <details><summary> Show </summary> 
-    	  * sudo apt install g++
-			To compile a .cpp file run the command:
-				g++ -std=c++11 myProg.cpp -o myProg
-			To run the file simply type the command:
-				./myProg
-			To combine these into a single command:
-				g++ -std=c++11 myProg.cpp -o myProg && ./,myProg
-    	  </details>
-    </details>
-	- Windows<details><summary> Show </summary> 
-    	In windows you have two options:
-			1 Windows Subsystem for Linux (WSL)
-				
-    </details>
-	- Mac
+- Linux <details><summary> Show </summary> 
+   	- Debian based systems <details><summary> Show </summary> 
+   	  * sudo apt install g++
+		To compile a .cpp file run the command:
+			g++ -std=c++11 myProg.cpp -o myProg
+		To run the file simply type the command:
+			./myProg
+		To combine these into a single command:
+			g++ -std=c++11 myProg.cpp -o myProg && ./,myProg
+   	  </details>
+   </details>
+- Windows<details><summary> Show </summary> 
+   	In windows you have two options:
+		1 Windows Subsystem for Linux (WSL)
+		
+   </details>
+- Mac
 ## Pre-processor
 First, we will go over pre-processor directives.
 Im sure you have used \#include, \#ifndef, and \#define directives, but there are many more, and they are a lot more useful than you originally learned!
