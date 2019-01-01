@@ -9,9 +9,7 @@ Here are a few ways you may want to go about this:
 - Code::Blocks (Any)
 ### Command Line
 - Linux <details><summary> Show </summary> 
-   	- Debian based systems (Ubuntu Included) 
-
-	<details><summary> Show </summary> 
+   	- Debian based systems (Ubuntu Included) <details><summary> Show </summary> 
    	  * sudo apt install g++
 		<br /> To compile a .cpp file run the command: <br />
 			g++ -std=c++11 myProg.cpp -o myProg <br />
@@ -40,6 +38,8 @@ Here are a few ways you may want to go about this:
 - Mac
 ## Pre-processor
 First, we will go over pre-processor directives.
+
+
 Im sure you have used \#include, \#ifndef, and \#define directives, but there are many more, and they are a lot more useful than you originally learned!
 Pre-processor directives:
 - Macros
