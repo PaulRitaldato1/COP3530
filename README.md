@@ -8,8 +8,10 @@ Here are a few ways you may want to go about this:
 - VisualStudio (Windows)
 - Code::Blocks (Any)
 ### Command Line
-<details><summary> Linux </summary> 
-1. <details><summary> Debian based systems (Ubuntu Included) </summary> 
+<details><summary> Linux </summary>
+
+ 
+* <details><summary> Debian based systems (Ubuntu Included) </summary> 
 		
 	# To install the g++ compiler open a terminal and type:
 		sudo apt install g++
@@ -22,15 +24,15 @@ Here are a few ways you may want to go about this:
 </details>
 
 
-2. <details><summary> Arch based systems </summary>
+* <details><summary> Arch based systems </summary>
 
-	# To install the g++ compiler open a terminal and type:
+	To install the g++ compiler open a terminal and type:
 		sudo pacman -S g++
-	# To compile a .cpp file run the command:
+	To compile a .cpp file run the command:
 		g++ -std=c++11 myProg.cpp -o myProg
-	# To run the file simply type the command:
+	To run the file simply type the command:
 		./myProg
-	# To combine these into a single command:
+	To combine these into a single command:
 		g++ -std=c++11 myProg.cpp -o myProg && ./myProg
 </details>
 
