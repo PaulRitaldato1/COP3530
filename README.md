@@ -9,7 +9,7 @@ Here are a few ways you may want to go about this:
 - Code::Blocks (Any)
 ### Command Line
 <details><summary> Linux </summary> 
-   	<details><summary> Debian based systems (Ubuntu Included) </summary> 
+   	*<details><summary> Debian based systems (Ubuntu Included) </summary> 
 		
 	# To install the g++ compiler open a terminal and type:
 		sudo apt install g++
@@ -18,7 +18,7 @@ Here are a few ways you may want to go about this:
 	# To run the file simply type the command:
 		./myProg
 	# To combine these into a single command:
-		g++ -std=c++11 myProg.cpp -o myProg && ./,myProg
+		g++ -std=c++11 myProg.cpp -o myProg && ./myProg
    </details>
 </details>
 <details><summary> Windows </summary> 
