@@ -220,18 +220,15 @@ The delete keyword is used to de-allocate memory that was allocated with new. Th
 * <pre><code>//pointer math example
   int a[5] = {1, 2, 3, 4, 5};
   int\* pa = a; //Arrays are pointers! So you dont need to use the & operator
-  std::cout << "a[2] is: " << \*(pa + 2) << std::endl; //This will print out a[2]
- </code></pre>
+  std::cout << "a[2] is: " << \*(pa + 2) << std::endl; //This will print out a[2]</code></pre>
 
 * <pre><code>myObject\* a; //Assume there is some object called myObject
-  myObject->function(); //The -> operator is used in place of . when you have a pointer to an object
- </code></pre>
+  myObject->function(); //The -> operator is used in place of . when you have a pointer to an object</code></pre>
 * <pre><code>//Dynamic memory example
   int size;
   std::cin >> size; //get size of the shopping list from user
   std::string* shopping_list;
-  shopping_list = new std::string[size]; //allocate an array to the size specified at runtime
- </code></pre>
+  shopping_list = new std::string[size]; //allocate an array to the size specified at runtime</code></pre>
 ### References
 References are an 'alias' to a variable. You do not need to dereference references to access their data.
 
