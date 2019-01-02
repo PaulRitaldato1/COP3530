@@ -120,22 +120,21 @@ Undef does the exact opposit of define. For lack of a better word it adds "scope
 #### pragma once
 This can be used at the top of a header file to replace the standard ifndef, define, and endif statements.
 #### Examples
-* \#define ARRAY\_SIZE 500 <br />
-  int array[ARRAY\_SIZE] //Array is size 500
-* \#define sqr(a) (a\*a)<br />
+* <pre><code>#define ARRAY\_SIZE 500 <br />
+  int array[ARRAY\_SIZE] //Array is size 500</code></pre>
+* <pre><code>#define sqr(a) (a\*a)<br />
  
   int main(){<br />
     int x=5;<br />
     std::cout << sqr(x) << std::endl; //This will print out the result of x*x = 25<br />
     return 0;<br />
-  }
-* \#define ARRAY\_SIZE 200<br />
+  }</code></pre>
+* <pre><code>#define ARRAY\_SIZE 200<br />
     int array[ARRAY\_SIZE] // array is size 200<br />
   \#undef ARRAY\_SIZE<br />
 
   \#define ARRAY\_SIZE 100<br />
-  int array2[ARRAY\_SIZE] // array is size 100
-
+  int array2[ARRAY\_SIZE] // array is size 100</code></pre>
 ### Conditionals
 #### ifdef
 ifdef(if defined) will allow a section of code to be compiled ONLY if it has been defined elsewhere with define.
@@ -150,13 +149,11 @@ This directive must be at the end of all the previous directives mentioned. It s
 * <pre><code>//ifdef example<br />
     #ifdef ARRAY\_SIZE<br />
     int array[ARRAY\_SIZE] // This code is only compiled if ARRAY\_SIZE is defined. Preventing errors <br />
-    #endif
-</code></pre>
+    #endif</code></pre>
 * <pre><code>//ifndef example<br />
     #ifndef ARRAY\_SIZE<br />
     #define ARRAY\_SIZE 10 //ARRAY\_SIZE is only defined if it hasnt previously been defined<br />
-    #endif
-</code></pre>
+    #endif</code></pre>
 *  <pre><code>//if, elif, else example<br />
    	#if ARRAY\_SIZE>500<br />
     	#undef ARRAY\_SIZE<br />
@@ -167,8 +164,7 @@ This directive must be at the end of all the previous directives mentioned. It s
     #else<br />
     	#undef ARRAY\_SIZE<br />
     	#define ARRAY\_SIZE 100<br />
-    #endif
-</code></pre>
+    #endif</code></pre>
 ### Includes
 #### include <>
 This with the angle brackets is used to include files provided by implementation (on linux it searches known file paths from root or /). This is for including standard library headers, and has a pre-defined search path (depending on implementation).
