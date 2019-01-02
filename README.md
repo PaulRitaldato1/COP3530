@@ -44,7 +44,7 @@ Here are a few ways you may want to go about this:
 In windows you have two options:
 
 
-1. <details><summary> Windows Subsystem for Linux (WSL)(recommended) </summary>
+1. <details><summary> Windows Subsystem for Linux (WSL) </summary>
 	To install WSL follow these instructions: <br />
 	1. Open powershell as an <b>administrator</b> <br />
 	2. Copy and paste this command into powershell: <br />
@@ -66,7 +66,7 @@ In windows you have two options:
 	</details>
 
 
-2. <details><summary> Cygwin (recommended) </summary>
+2. <details><summary> Cygwin </summary>
 	To install Cygwin follow this tutorial:
 
 	<a href="http://www.youtube.com/watch?feature=player_embedded&v=dDbCZB1Mx-E" target="_blank"><img 	src="https://www.youtube.com/watch?v=dDbCZB1Mx-E/0.jpg" alt="Cygwin Tutorial" width="240" 		height="180" border="10" /></a>
