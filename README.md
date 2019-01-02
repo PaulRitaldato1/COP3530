@@ -148,26 +148,26 @@ This directive must be at the end of all the previous directives mentioned. It s
 
 #### Examples
 * <code><pre>//ifdef example<br />
-    \#ifdef ARRAY\_SIZE<br />
+    #ifdef ARRAY\_SIZE<br />
     int array[ARRAY\_SIZE] // This code is only compiled if ARRAY\_SIZE is defined. Preventing errors <br />
-    \#endif
+    #endif
 </code></pre>
 * <code><pre>//ifndef example<br />
-    \#ifndef ARRAY\_SIZE<br />
-    \#define ARRAY\_SIZE 10 //ARRAY\_SIZE is only defined if it hasnt previously been defined<br />
-    \#endif
+    #ifndef ARRAY\_SIZE<br />
+    #define ARRAY\_SIZE 10 //ARRAY\_SIZE is only defined if it hasnt previously been defined<br />
+    #endif
 </code></pre>
 *  <code><pre>//if, elif, else example<br />
-   \#if ARRAY\_SIZE>500<br />
-    \#undef ARRAY\_SIZE<br />
-    \#define ARRAY\_SIZE 100<br />
-    \#elif ARRAY\_SIZE<100<br />
-    \#undef ARRAY\_SIZE<br />
-    \#define ARRAY\_SIZE 100<br />
-    \#else<br />
-    \#undef ARRAY\_SIZE<br />
-    \#define ARRAY\_SIZE 100<br />
-    \#endif
+   	#if ARRAY\_SIZE>500<br />
+    	#undef ARRAY\_SIZE<br />
+    	#define ARRAY\_SIZE 100<br />
+    #elif ARRAY\_SIZE<100<br />
+    	#undef ARRAY\_SIZE<br />
+    	#define ARRAY\_SIZE 100<br />
+    #else<br />
+    	#undef ARRAY\_SIZE<br />
+    	#define ARRAY\_SIZE 100<br />
+    #endif
 </code></pre>
 ### Includes
 #### include <>
@@ -179,8 +179,8 @@ This include is used for including headers from your current path. The path that
 In both of these you can include a path to a certain file. By default \#include<> has pre defined search paths, and \#include"" only searches the current directory of the file that it is declared in. If you have a directory structure you can specify that in the path. See examples below.
 
 #### Examples
-* \#include\<vector\> //Standard library
-* \#include "bin/myHeader.h" //Starting from the current file path, search in the bin directory for myHeader.h
+* <code>\#include\<vector\> //Standard library</code>
+* <code>\#include "bin/myHeader.h" //Starting from the current file path, search in the bin directory for myHeader.h </code>
 
 ## Pointers and References
 Pointers are your friends! <br />
@@ -220,16 +220,16 @@ The delete keyword is used to de-allocate memory that was allocated with new. Th
   int a[5] = {1, 2, 3, 4, 5};<br />
   int\* pa = a; //Arrays are pointers! So you dont need to use the & operator<br />
   std::cout << "a[2] is: " << \*(pa + 2) << std::endl; //This will print out a[2]<br />
-</code></pre>
+ </code></pre>
 * <code><pre>myObject\* a; //Assume there is some object called myObject<br />
   myObject->function(); //The -> operator is used in place of . when you have a pointer to an object.<br />
-</code></pre>
+ </code></pre>
 * <code><pre>//Dynamic memory example
   int size;
   std::cin >> size; //get size of the shopping list from user
   std::string* shopping_list;
   shopping_list = new std::string[size]; //allocate an array to the size specified at runtime
-</code></pre>
+ 2</code></pre>
 ### References
 References are an 'alias' to a variable. You do not need to dereference references to access their data.
 
