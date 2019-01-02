@@ -47,7 +47,7 @@ In windows you have two options:
 1. <details><summary> Windows Subsystem for Linux (WSL)(recommended) </summary>
 	To install WSL follow these instructions: <br />
 	1. Open powershell as an <b>administrator</b> <br />
-	2. Copy and paste this command into powershell: 
+	2. Copy and paste this command into powershell: <br />
 			Enable-WindowsOptionalFeature -Online -FeatureName 	Microsoft-Windows-Subsystem-Linux <br />
 	3. Restart your computer <br />
 	4. Open the Windows/Microsoft store and search for "Ubuntu" <br />
