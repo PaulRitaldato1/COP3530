@@ -267,7 +267,7 @@ The only difference between classes and structs in C++ are the default accessibi
 * All data structure implementations in the C++ STL (Standard Template Library) are templated, so they can be used with any datatype.
 
 * <pre><code>template &lt;typename T&gt;
-	 T max(T a, T b){
+T max(T a, T b){
 	 	return a > b ? a : b;
 	 }</code></pre>
 * <pre><code>//This example shows a very basic node struct that would be used in a linked list
