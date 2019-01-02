@@ -45,8 +45,6 @@ In windows you have three options:
 
 
 1. <details><summary> Windows Subsystem for Linux (WSL)(recommended) </summary>
-
- 
 To install WSL follow these instructions:
 1. Open powershell as an __administrator__
 2. Copy and paste this command into powershell: Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Windows-Subsystem-Linux
@@ -55,13 +53,11 @@ To install WSL follow these instructions:
 5. Install Ubuntu
 6. Run it, then create a username and password as prompted
 7. Follow steps in the Linux section to install g++ and compile cpp programs
-</details>
+	</details>
 
 
 2. <details><summary> Cygwin (recommended) </summary>
 To install Cygwin follow this tutorial:
-
-
 <a href="http://www.youtube.com/watch?feature=player_embedded&v=dDbCZB1Mx-E" target="_blank"><img src="https://www.youtube.com/watch?v=dDbCZB1Mx-E/0.jpg" alt="Cygwin Tutorial" width="240" height="180" border="10" /></a>
 	</details>
 			
