@@ -48,7 +48,7 @@ In windows you have two options:
 	To install WSL follow these instructions: <br />
 	1. Open powershell as an <b>administrator</b> <br />
 	2. Copy and paste this command into powershell: <br />
-	<code>Enable-WindowsOptionalFeature -Online -FeatureName 	Microsoft-Windows-Subsystem-Linux <br /></code>
+	<code>Enable-WindowsOptionalFeature -Online -FeatureName 	Microsoft-Windows-Subsystem-Linux </code><br />
 	3. Restart your computer <br />
 	4. Open the Windows/Microsoft store and search for "Ubuntu" <br />
 	5. Install Ubuntu <br />
