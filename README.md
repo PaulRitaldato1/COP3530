@@ -45,14 +45,14 @@ In windows you have three options:
 
 
 * <details><summary> Windows Subsystem for Linux (WSL)(recommended) </summary>
-	To install WSL follow these instructions:
-	1. Open powershell as an __administrator__
-	2. Copy and paste this command into powershell: Enable-WindowsOptionalFeature -Online -FeatureName 	Microsoft-Windows-Subsystem-Linux
-	3. Restart your computer
-	4. Open the Windows/Microsoft store and search for "Ubuntu"
-	5. Install Ubuntu
-	6. Run it, then create a username and password as prompted
-	7. Follow steps in the Linux section to install g++ and compile cpp programs
+	To install WSL follow these instructions: <br />
+	1. Open powershell as an __administrator__ <br />
+	2. Copy and paste this command into powershell: Enable-WindowsOptionalFeature -Online -FeatureName 	Microsoft-Windows-Subsystem-Linux <br />
+	3. Restart your computer <br />
+	4. Open the Windows/Microsoft store and search for "Ubuntu" <br />
+	5. Install Ubuntu <br />
+	6. Run it, then create a username and password as prompted <br />
+	7. Follow steps in the Linux section to install g++ and compile cpp programs <br />
 	</details>
 
 
