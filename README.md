@@ -41,7 +41,7 @@ Here are a few ways you may want to go about this:
 <details><summary> Windows </summary> 
 
 
-In windows you have three options:
+In windows you have two options:
 
 
 1. <details><summary> Windows Subsystem for Linux (WSL)(recommended) </summary>
@@ -52,7 +52,17 @@ In windows you have three options:
 	4. Open the Windows/Microsoft store and search for "Ubuntu" <br />
 	5. Install Ubuntu <br />
 	6. Run it, then create a username and password as prompted <br />
-	7. Follow steps in the Linux section to install g++ and compile cpp programs <br />
+	
+
+	#### To install the g++ compiler open a terminal and type:
+		sudo apt install g++
+	#### To compile a .cpp file run the command:
+		g++ -std=c++11 myProg.cpp -o myProg
+	#### To run the file simply type the command:
+		./myProg
+	#### To combine these into a single command:
+		g++ -std=c++11 myProg.cpp -o myProg && ./myProg
+	</details>
 	</details>
 
 
@@ -65,6 +75,17 @@ In windows you have three options:
 		
 </details>
 <details><summary>Mac</summary>
+Instructions to install g++ on a mac:
+
+1. Open a terminal and type "g++"
+2. Click install on the menu that pops up
+	#### To compile a .cpp file run the command:
+		g++ -std=c++11 myProg.cpp -o myProg
+	#### To run the file simply type the command:
+		./myProg
+	#### To combine these into a single command:
+		g++ -std=c++11 myProg.cpp -o myProg && ./myProg
+	</details> 
 </details>
 
 
