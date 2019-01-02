@@ -230,10 +230,10 @@ The delete keyword is used to de-allocate memory that was allocated with new. Th
 References are an 'alias' to a variable. You do not need to dereference references to access their data.
 
 ### Example
-* int i = 5; <br />
+* <pre><code>int i = 5; <br />
   int& ri = i; //ri is a reference or alias to i<br />
   std::cout << "Printing out i through the reference ri: " << ri << std::endl;<br />
-
+  </code></pre>
 ### When to use what
 * Pointers
     * To implement data structures (This class!)
@@ -265,7 +265,7 @@ Templates allow functions and classes in C++ to operate with generic types. This
 * All data structure implementations in the C++ STL (Standard Template Library) are templated, so they can be used with any datatype.
 
 * <pre><code> 
-	template &lt; typename T &gt;
+	template &lt;typename T&gt;
 		 T max(T a, T b){
 		 	return a > b ? a : b;
 		 }
