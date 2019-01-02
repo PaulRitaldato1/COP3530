@@ -120,21 +120,21 @@ Undef does the exact opposit of define. For lack of a better word it adds "scope
 #### pragma once
 This can be used at the top of a header file to replace the standard ifndef, define, and endif statements.
 #### Examples
-* <pre><code>#define ARRAY\_SIZE 500 <br />
-  int array[ARRAY\_SIZE] //Array is size 500</code></pre>
-* <pre><code>#define sqr(a) (a\*a)<br />
+* <pre><code>#define ARRAY_SIZE 500
+  int array[ARRAY_SIZE] //Array is size 500</code></pre>
+* <pre><code>#define sqr(a) (a\*a)
  
-  int main(){<br />
-    int x=5;<br />
-    std::cout << sqr(x) << std::endl; //This will print out the result of x*x = 25<br />
-    return 0;<br />
+  int main(){
+    int x=5;
+    std::cout << sqr(x) << std::endl; //This will print out the result of x*x = 25
+    return 0;
   }</code></pre>
-* <pre><code>#define ARRAY\_SIZE 200<br />
-    int array[ARRAY\_SIZE] // array is size 200<br />
-  \#undef ARRAY\_SIZE<br />
+* <pre><code>#define ARRAY_SIZE 200
+	int array[ARRAY_SIZE] // array is size 200
+	#undef ARRAY_SIZE
 
-  \#define ARRAY\_SIZE 100<br />
-  int array2[ARRAY\_SIZE] // array is size 100</code></pre>
+	#define ARRAY_SIZE 100
+	int array2[ARRAY_SIZE] // array is size 100</code></pre>
 ### Conditionals
 #### ifdef
 ifdef(if defined) will allow a section of code to be compiled ONLY if it has been defined elsewhere with define.
@@ -147,23 +147,23 @@ This directive must be at the end of all the previous directives mentioned. It s
 
 #### Examples
 * <pre><code>//ifdef example<br />
-    #ifdef ARRAY\_SIZE<br />
+    #ifdef ARRAY\_SIZE
     int array[ARRAY\_SIZE] // This code is only compiled if ARRAY\_SIZE is defined. Preventing errors <br />
     #endif</code></pre>
-* <pre><code>//ifndef example<br />
-    #ifndef ARRAY\_SIZE<br />
-    #define ARRAY\_SIZE 10 //ARRAY\_SIZE is only defined if it hasnt previously been defined<br />
+* <pre><code>//ifndef example
+    #ifndef ARRAY_SIZE
+    #define ARRAY_SIZE 10 //ARRAY_SIZE is only defined if it hasnt previously been defined
     #endif</code></pre>
 *  <pre><code>//if, elif, else example
-   	#if ARRAY\_SIZE>500<br />
-    	#undef ARRAY\_SIZE<br />
-    	#define ARRAY\_SIZE 100<br />
-    #elif ARRAY\_SIZE<100<br />
-    	#undef ARRAY\_SIZE<br />
-    	#define ARRAY\_SIZE 100<br />
-    #else<br />
-    	#undef ARRAY\_SIZE<br />
-    	#define ARRAY\_SIZE 100<br />
+	#if ARRAY_SIZE>500
+    	#undef ARRAY_SIZE
+    	#define ARRAY_SIZE 100
+    #elif ARRAY_SIZE<100
+    	#undef ARRAY_SIZE
+    	#define ARRAY_SIZE 100
+    #else
+    	#undef ARRAY_SIZE
+    	#define ARRAY_SIZE 100
     #endif</code></pre>
 ### Includes
 #### include <>
