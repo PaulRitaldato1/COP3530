@@ -256,4 +256,16 @@ The c++ STL is extremely useful and will be used throughout this course. STL pro
 7. #include \<list\> //allows the use of (linked)lists
 
 ## Templates, Classes, Interfaces, Inheritance
+These are what distinguish C++ from C. There are many differences between C and C++, but they mostly consist of the addition of object oriented programming (OOP) features.
 
+### Templates
+Templates allow functions and classes in C++ to operate with generic types. This allows us to reduce the amount of code we have to write by preventing duplicate code. This allows us to write generic code, so that instead of rewriting/overloading functions for different parameter types, we can write one template to accomplish the same thing.
+
+### Examples
+* All data structure implementations in the C++ STL (Standard Template Library) are templated, so they can be used with anyt datatype.
+
+* <code> template <typename T>
+		 T max(T a, T b){
+		 	return a > b ? a : b;
+		 }
+  </code>
