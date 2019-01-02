@@ -54,7 +54,7 @@ In windows you have two options:
 	6. Run it, then create a username and password as prompted <br />
 	
 
-	#### To install the g++ compiler open a terminal and type:
+	#### To install the g++ compiler open the ubuntu terminal you just installed and type:
 		sudo apt install g++
 	#### To compile a .cpp file run the command:
 		g++ -std=c++11 myProg.cpp -o myProg
