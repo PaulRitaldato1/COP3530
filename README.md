@@ -147,17 +147,17 @@ These directives serve a similar purpose to what you would expect. They allow fo
 This directive must be at the end of all the previous directives mentioned. It serves to tell the pre-processor when the condition block of code has ended.
 
 #### Examples
-* <code><pre>//ifdef example<br />
+* <pre><code>//ifdef example<br />
     #ifdef ARRAY\_SIZE<br />
     int array[ARRAY\_SIZE] // This code is only compiled if ARRAY\_SIZE is defined. Preventing errors <br />
     #endif
 </code></pre>
-* <code><pre>//ifndef example<br />
+* <pre><code>//ifndef example<br />
     #ifndef ARRAY\_SIZE<br />
     #define ARRAY\_SIZE 10 //ARRAY\_SIZE is only defined if it hasnt previously been defined<br />
     #endif
 </code></pre>
-*  <code><pre>//if, elif, else example<br />
+*  <pre><code>//if, elif, else example<br />
    	#if ARRAY\_SIZE>500<br />
     	#undef ARRAY\_SIZE<br />
     	#define ARRAY\_SIZE 100<br />
@@ -214,17 +214,19 @@ The delete keyword is used to de-allocate memory that was allocated with new. Th
 * <pre><code>//basic pointer example
   int a = 5; //Declare and initialize an int <br />
   int\* pa = &a;//Assign the pointer pa to the address of a<br />
-  std::cout << "The address of a is: " << pa << "\nThe value at that address is: " << \*pa << std::endl; //print the address and value of a <br />
+  std::cout << "The address of a is: " << pa << "\nThe value at that address is: " << \*pa << std::endl; //print the address and value of a
  </code></pre>
-* <code><pre>//pointer math example
-  int a[5] = {1, 2, 3, 4, 5};<br />
-  int\* pa = a; //Arrays are pointers! So you dont need to use the & operator<br />
-  std::cout << "a[2] is: " << \*(pa + 2) << std::endl; //This will print out a[2]<br />
+
+* <pre><code>//pointer math example
+  int a[5] = {1, 2, 3, 4, 5};
+  int\* pa = a; //Arrays are pointers! So you dont need to use the & operator
+  std::cout << "a[2] is: " << \*(pa + 2) << std::endl; //This will print out a[2]
  </code></pre>
-* <code><pre>myObject\* a; //Assume there is some object called myObject<br />
+
+* <pre><code>myObject\* a; //Assume there is some object called myObject<br />
   myObject->function(); //The -> operator is used in place of . when you have a pointer to an object.<br />
  </code></pre>
-* <code><pre>//Dynamic memory example
+* <pre><code>//Dynamic memory example
   int size;
   std::cin >> size; //get size of the shopping list from user
   std::string* shopping_list;
