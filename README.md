@@ -154,7 +154,7 @@ This directive must be at the end of all the previous directives mentioned. It s
     #ifndef ARRAY\_SIZE<br />
     #define ARRAY\_SIZE 10 //ARRAY\_SIZE is only defined if it hasnt previously been defined<br />
     #endif</code></pre>
-*  <pre><code>//if, elif, else example<br />
+*  <pre><code>//if, elif, else example
    	#if ARRAY\_SIZE>500<br />
     	#undef ARRAY\_SIZE<br />
     	#define ARRAY\_SIZE 100<br />
@@ -254,11 +254,14 @@ The c++ STL is extremely useful and will be used throughout this course. STL pro
 6. #include \<queue\> //allows the use of queues
 7. #include \<list\> //allows the use of (linked)lists
 
-## Templates, Classes, Interfaces, Inheritance
+## Templates, Classes/Structs
 These are what distinguish C++ from C. There are many differences between C and C++, but they mostly consist of the addition of object oriented programming (OOP) features.
 
 ### Templates
 Templates allow functions and classes in C++ to operate with generic types. This allows us to reduce the amount of code we have to write by preventing duplicate code. This allows us to write generic code, so that instead of rewriting/overloading functions for different parameter types, we can write one template to accomplish the same thing.
+
+### Classes/Structs
+The only difference between classes and structs in C++ are the default accessibility of their members. Classes by default have all members as private (unless specified otherwise) and structs have all members public by default. 
 
 ### Examples
 * All data structure implementations in the C++ STL (Standard Template Library) are templated, so they can be used with any datatype.
@@ -267,5 +270,19 @@ Templates allow functions and classes in C++ to operate with generic types. This
 	template &lt;typename T&gt;
 		 T max(T a, T b){
 		 	return a > b ? a : b;
-		 }
-  </code></pre>
+		 }</code></pre>
+* <pre><code>
+	//This example shows a very basic node struct that would be used in a linked list
+	//The node can be any data type, allowing the linked list to store any data type
+	template &lt;typename T&gt;
+	struct node{ //Part of a linked list. NOT comprehensive, just a simple example
+	public:
+		node();
+		~node();
+
+		T get_value(T value);
+	private:
+		T _value;
+		node* next;
+};</code></pre>
+		
