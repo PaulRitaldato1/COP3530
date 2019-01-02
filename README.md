@@ -147,15 +147,17 @@ These directives serve a similar purpose to what you would expect. They allow fo
 This directive must be at the end of all the previous directives mentioned. It serves to tell the pre-processor when the condition block of code has ended.
 
 #### Examples
-* //ifdef example<br />
+* <code><pre>//ifdef example<br />
     \#ifdef ARRAY\_SIZE<br />
     int array[ARRAY\_SIZE] // This code is only compiled if ARRAY\_SIZE is defined. Preventing errors <br />
     \#endif
-* //ifndef example<br />
+</code></pre>
+* <code><pre>//ifndef example<br />
     \#ifndef ARRAY\_SIZE<br />
     \#define ARRAY\_SIZE 10 //ARRAY\_SIZE is only defined if it hasnt previously been defined<br />
     \#endif
-*  //if, elif, else example<br />
+</code></pre>
+*  <code><pre>//if, elif, else example<br />
    \#if ARRAY\_SIZE>500<br />
     \#undef ARRAY\_SIZE<br />
     \#define ARRAY\_SIZE 100<br />
@@ -166,7 +168,7 @@ This directive must be at the end of all the previous directives mentioned. It s
     \#undef ARRAY\_SIZE<br />
     \#define ARRAY\_SIZE 100<br />
     \#endif
-
+</code></pre>
 ### Includes
 #### include <>
 This with the angle brackets is used to include files provided by implementation (on linux it searches known file paths from root or /). This is for including standard library headers, and has a pre-defined search path (depending on implementation).
@@ -209,23 +211,25 @@ The delete keyword is used to de-allocate memory that was allocated with new. Th
 
 
 ### Examples
-* //basic pointer example
+* <pre><code>//basic pointer example
   int a = 5; //Declare and initialize an int <br />
   int\* pa = &a;//Assign the pointer pa to the address of a<br />
   std::cout << "The address of a is: " << pa << "\nThe value at that address is: " << \*pa << std::endl; //print the address and value of a <br />
-
-* //pointer math example
+ </code></pre>
+* <code><pre>//pointer math example
   int a[5] = {1, 2, 3, 4, 5};<br />
   int\* pa = a; //Arrays are pointers! So you dont need to use the & operator<br />
   std::cout << "a[2] is: " << \*(pa + 2) << std::endl; //This will print out a[2]<br />
-* myObject\* a; //Assume there is some object called myObject<br />
+</code></pre>
+* <code><pre>myObject\* a; //Assume there is some object called myObject<br />
   myObject->function(); //The -> operator is used in place of . when you have a pointer to an object.<br />
-* //Dynamic memory example
+</code></pre>
+* <code><pre>//Dynamic memory example
   int size;
   std::cin >> size; //get size of the shopping list from user
   std::string* shopping_list;
   shopping_list = new std::string[size]; //allocate an array to the size specified at runtime
-
+</code></pre>
 ### References
 References are an 'alias' to a variable. You do not need to dereference references to access their data.
 
