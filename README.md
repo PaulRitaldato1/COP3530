@@ -211,11 +211,11 @@ The delete keyword is used to de-allocate memory that was allocated with new. Th
 
 
 ### Examples
-* <pre><code>//basic pointer example
-  int a = 5; //Declare and initialize an int <br />
-  int\* pa = &a;//Assign the pointer pa to the address of a<br />
+*	<pre><code>//basic pointer example
+  int a = 5; //Declare and initialize an int
+  int\* pa = &a;//Assign the pointer pa to the address of a
   std::cout << "The address of a is: " << pa << "\nThe value at that address is: " << \*pa << std::endl; //print the address and value of a
- </code></pre>
+	</code></pre>
 
 * <pre><code>//pointer math example
   int a[5] = {1, 2, 3, 4, 5};
@@ -223,22 +223,22 @@ The delete keyword is used to de-allocate memory that was allocated with new. Th
   std::cout << "a[2] is: " << \*(pa + 2) << std::endl; //This will print out a[2]
  </code></pre>
 
-* <pre><code>myObject\* a; //Assume there is some object called myObject<br />
-  myObject->function(); //The -> operator is used in place of . when you have a pointer to an object.<br />
+* <pre><code>myObject\* a; //Assume there is some object called myObject
+  myObject->function(); //The -> operator is used in place of . when you have a pointer to an object
  </code></pre>
 * <pre><code>//Dynamic memory example
   int size;
   std::cin >> size; //get size of the shopping list from user
   std::string* shopping_list;
   shopping_list = new std::string[size]; //allocate an array to the size specified at runtime
- 2</code></pre>
+ </code></pre>
 ### References
 References are an 'alias' to a variable. You do not need to dereference references to access their data.
 
 ### Example
-* <pre><code>int i = 5; <br />
-  int& ri = i; //ri is a reference or alias to i<br />
-  std::cout << "Printing out i through the reference ri: " << ri << std::endl;<br />
+* <pre><code>int i = 5;
+  int& ri = i; //ri is a reference or alias to i
+  std::cout << "Printing out i through the reference ri: " << ri << std::endl;
   </code></pre>
 ### When to use what
 * Pointers
