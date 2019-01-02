@@ -264,7 +264,7 @@ Templates allow functions and classes in C++ to operate with generic types. This
 ### Examples
 * All data structure implementations in the C++ STL (Standard Template Library) are templated, so they can be used with anyt datatype.
 
-* <code> template <typename T>
+* <code> template \<typename T\>
 		 T max(T a, T b){
 		 	return a > b ? a : b;
 		 }
