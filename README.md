@@ -23,37 +23,33 @@ Here is an example of an SSL class:
 #pragma once
 
 //because this class is templated, all functionality must be included in this file (header file) because C++ must know the value of T at compile time.
-template <typename T>
-class SLL {
-	
-	public:
-		SLL(); //constructor
-		~SLL(); //destructor 
-		
-		//SLL functions you may want, add more to add more functionality
-		void append();
-		void prepend();
-		void remove_by_value(const T& value); //should this remove all instances of the value? or just the first?
-		void remove_by_index(const int index);
-		T& value_at(const int index);
-		T& find(const T& value);
-		void print();
-		
-		inline T& operator[](const int &index){return this->value_at(index);} //Now you can use it like an array
-	private:
-		int _size; //easy way to keep track of size so we dont need to make an O(n) function to count constantly. The underscore is the naming convention for C/C++ member variables
+#include <stdexcept>
+#include <iostream>
 
-		struct node{
-			public:
-				node(); //constructor
-				~node(); //destructor
-			private:
-				T data; //can store any datatype, class is templated
-				node* _next; //next node in the list
-		};//end node
+template <typename E>
+class SLL
+{
+ public:
+  SLL();
+  ~SLL();
+  void insert_at( E value , unsigned int position);
+  E remove_item_at(unsigned int position);
+  void append(E value);
+  void prepend(E value);
+  void print();
+  unsigned int replace(E value, E replacement);
 
-		node* _head;
-		//node _tail; //You may want to keep a tail pointer, but this isnt necessary.
+  int length();
+  inline bool is_empty(){return head == nullptr;}
+ private:
+  struct Node;
+  Node* head;
+};//class sll
 
-};//end SLL
+template <typename E>
+struct SLL<E>::Node
+{
+  Node* next;
+  E data; 
+};//struct Node
 </code></pre>
