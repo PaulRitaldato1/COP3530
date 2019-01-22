@@ -19,7 +19,8 @@ This is the first type of list that will be talked about. A singly linked list c
 
 Here is an example of an SSL class:
 
-<pre><code>#pragma once
+```c++
+#pragma once
 //because this class is templated, all functionality must be included in this file (header file) because C++ must know the value of T at compile time.
 #include <stdexcept>
 #include <iostream>
@@ -49,4 +50,5 @@ struct SLL<E>::Node
 {
   Node* next;
   E data; 
-};//struct Node</code></pre>
+};//struct Node
+```
