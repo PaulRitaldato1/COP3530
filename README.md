@@ -54,6 +54,7 @@ struct SLL<E>::Node
 ```
 ## Stacks
 Stacks are linear data structures that serve as storage of objects. Items are inserted and removed by the Last In First Out (LIFO) principle.
+
 Stack Operation | Time Complexity
 --- | ---
 Push (add element) | O(1)
