@@ -2,7 +2,7 @@
 These are the first set of data structures you will be introduced to. The implementations shown here will be simple but they can be expanded.
 
 ## Linked Lists
-Linked lists are a data structure used to store data. This is a pretty broad statement, but they essentially perform the same functions as an array but with some pros. and cons.
+Linked lists are a linear data structure used to store objects. This is a pretty broad statement, but they essentially perform the same functions as an array with some other features. 
 
 The easiest way for me to explain their usage, would be to explain the differences between a linked list and an array.
 
