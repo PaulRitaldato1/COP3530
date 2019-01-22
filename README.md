@@ -54,6 +54,11 @@ struct SLL<E>::Node
 ```
 ## Stacks
 Stacks are linear data structures that serve as storage of objects. Items are inserted and removed by the Last In First Out (LIFO) principle.
+Stack Operation | Time Complexity
+--- | ---
+Push (add element) | O(1)
+Pop (remove element) | O(1)
+Peek (peek at first element) | O(1)
 
 ```c++
 #pragma once
@@ -90,6 +95,11 @@ struct SLL<E>::Node
 ## Queues
 Similar to stacks, queues are also linear data structures that store objects. The difference being that items inserted and removed from queues follow the First In First Out (FIFO) principle. So the first item queued will be the first item to be removed on a dequeue.
 
+Queue Operation | Time Complexity
+--- | ---
+Enqueue (add element) | O(1)
+Dequeue (remove element) | O(1)
+Peek (peek at first element) | O(1)
 ```c++
 #pragma once
 
