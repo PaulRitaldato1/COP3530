@@ -17,6 +17,12 @@ Must iterate through to find a given element (O(n) access time) | Direct indexin
 ### Singly Linked Lists (SLL)
 This is the first type of list that will be talked about. A singly linked list consists of nodes, connected by pointers. A singly linked list is only connected "one way" with each node in the list pointing to the next. All examples I will show are linked list based implementations. There are array based implementations for each of these data structures, but they are not shown here.
 
+Linked List Operation | Time Complexity
+--- | ---
+Average Insert | O(n)
+Average Delete | O(n)
+Average Access | O(n)
+
 Here is an example of an SSL class:
 
 ```c++
