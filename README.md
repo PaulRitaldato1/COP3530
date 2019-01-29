@@ -1,7 +1,7 @@
 # Recursion and Binary Search Trees
 
 ## Recursion 
-Here are some code samples of recursion used in a SLL. The example shows a decentralized SLL. This means that the majority of the functionality is not inside the SLL class as you will ssee!
+Here are some code samples of recursion used in a SLL. The example shows a decentralized SLL. This means that the majority of the functionality is not inside the SLL class as you will see!
 
 ```c++
 #ifndef _SLL_H_
